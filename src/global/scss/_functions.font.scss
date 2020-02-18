@@ -1,0 +1,14 @@
+/// Converts pixels to relative values (em).
+/// @access public
+/// @param {number|string} $pixels - The pixel value to be converted.
+/// @param {number|string} $context [$browser-context] - The base context to convert against.
+@function em($pixels, $context: 16px) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return ($pixels / $context) * 1em;
+}
+

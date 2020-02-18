@@ -1,0 +1,37 @@
+.dark-theme {
+  --igc-primary-color: #111;
+  --igc-accent-color: #424242;
+  --igc-text-color: rgba(255, 255, 255, .7);
+  --igc-border-color: #212121;
+  --igc-button-text: #fff;
+  --igc-splitter-background: #000;
+  --igc-flyout-shadow-color: rgba(0, 0, 0, .38);
+}
+
+.light-theme {
+    --igc-primary-color: #E5E7E9;
+    --igc-accent-color: #fff;
+    --igc-text-color: rgba(0, 0, 0, .72);
+    --igc-border-color: #F3F5F7;
+    --igc-button-text: rgba(0, 0, 0, .72);
+    --igc-splitter-background: #D3D6D9;
+    --igc-flyout-shadow-color: rgba(0, 0, 0, .08);
+    --igc-joystick-icon-color-active: #000;
+    --igc-floating-pane-border-color: rgba(0, 0, 0, .26);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --igc-primary-color: #E5E7E9;
+    --igc-accent-color: #fff;
+    --igc-text-color: rgba(0, 0, 0, .72);
+    --igc-border-color: #F3F5F7;
+    --igc-button-text: rgba(0, 0, 0, .72);
+    --igc-splitter-background: #D3D6D9;
+    --igc-flyout-shadow-color: rgba(0, 0, 0, .08);
+    --igc-joystick-icon-color-active: #000;
+    --igc-tab-background-active: #F3F5F7;
+    --igc-pane-content-background: #F3F5F7;
+    --igc-floating-pane-border-color: rgba(0, 0, 0, .26);
+  }
+}

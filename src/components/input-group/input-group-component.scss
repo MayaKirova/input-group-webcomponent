@@ -1,0 +1,114 @@
+:host {
+  $ease-out-cubic: cubic-bezier(.215, .61, .355, 1);
+  $transition-timing: .25s $ease-out-cubic;
+  $left: if-ltr(left, right);
+  $right: if-ltr(right, left);
+  $base-scale-size: (
+    'comfortable': 16px,
+    'cosy': 19px,
+    'compact': 22px
+);
+
+  position: relative;
+  display: block;
+  color: rgba(0,0,0,0.54);
+
+
+%form-group-bundle {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  padding-top: 1.125rem;
+  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.54);
+  transition: box-shadow 0.25s cubic-bezier(0.215, 0.61, 0.355, 1),color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+%form-group-bundle-main {
+  position: relative;
+  flex-grow: 1;
+}
+%form-group-input {
+  position: relative;
+  display: block;
+  border: none;
+  height: 2rem;
+  line-height: 0 !important;
+  width: 100%;
+  min-width: 0;
+  overflow: visible;
+  background: transparent;
+  color: rgba(0,0,0,0.87);
+  outline-style: none;
+  box-shadow: none;
+  border-top: .1875rem solid transparent;
+  padding-bottom: .1875rem;
+}
+%form-group-label {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    line-height: 1 !important;
+    height: 1.125rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1),color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1),margin 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+div.igx-input-group-main {
+  @extend %form-group-bundle-main;
+}
+
+div.igx-input-group-bundle {
+  @extend %form-group-bundle;
+}
+
+::slotted(input) {
+  @extend %form-group-input;
+}
+  
+::slotted(label) {
+    @extend %form-group-label;
+}
+
+%form-group-prefix,
+%form-group-suffix {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 2rem;
+      transition: color $transition-timing;
+      padding: .5rem .5rem .5rem 0;
+}
+
+.prefix {
+  @extend %form-group-prefix;
+}
+
+.suffix {
+  @extend %form-group-suffix;
+}
+
+}
+.active {
+    .igx-input-group-bundle {
+        caret-color: #09f;
+        box-shadow: inset 0 -2px 0 0 rgba(0,153,255,0.12);
+    }
+    ::slotted(label) {
+      overflow: visible;
+      transform: translateY(-50%) scale(0.75);
+      margin-top: auto;
+    }
+}
+

@@ -1,0 +1,9 @@
+/// Applies text-overflow ellipsis to e text element.
+/// This won't work on display flex elements.
+/// @access public
+@mixin ellipsis() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+

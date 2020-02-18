@@ -1,0 +1,45 @@
+$_primary-color-value: #111;
+$_accent-color-value: #424242;
+$_text-color-value: rgba(#fff, .7);
+$_border-color-value: #212121;
+$_font-family-value: 'Titillium Web', 'Roboto', 'Helvetica Neue', sans-serif;
+$_flyout-shadow-color: rgba(0, 0, 0, .18);
+
+$primary-color: var(--igc-primary-color, $_primary-color-value);
+$accent-color: var(--igc-accent-color, $_accent-color-value);
+$text-color: var(--igc-text-color, $_text-color-value);
+$border-color: var(--igc-border-color, $_border-color-value);
+$font-family: var(--igc-font-family, $_font-family-value);
+
+$dock-background: var(--igc-dock-background, $primary-color);
+$dock-text: var(--igc-dock-text, $text-color);
+
+$pane-header-background: var(--igc-pane-header-backround, $primary-color);
+$pane-header-text: var(--igc-pane-header-text, $text-color);
+$pane-content-background: var(--igc-pane-content-background, $border-color);
+$pane-content-text: var(--igc-pane-content-text, $text-color);
+
+$tab-text: var(--igc-tab-text, $text-color);
+$tab-background: var(--igc-tab-background, $primary-color);
+$tab-border-color: var(--igc-tab-border-color, $border-color);
+
+$tab-text-active: var(--igc-tab-text-active, $text-color);
+$tab-background-active: var(--igc-tab-background-active, $border-color);
+$tab-border-color-active: var(--igc-tab-border-color-active, $border-color);
+
+$pinned-header-background: var(--igc-pinned-header-background, $accent-color);
+$pinned-header-text: var(--igc-pinned-header-text, $text-color);
+
+$splitter-background: var(--igc-splitter-background, #000);
+$splitter-handle: var(--igc-splitter-handle, $accent-color);
+
+$button-text: var(--igc-button-text, #fff);
+$flyout-shadow-color: var(--igc-flyout-shadow-color, $_flyout-shadow-color);
+
+$joystick-background: var(--igc-joystick-background, $accent-color);
+$joystick-icon-color: var(--igc-joystick-icon-color, $text-color);
+
+$joystick-background-active: var(--igc-joystick-background-active, $accent-color);
+$joystick-icon-color-active: var(--igc-joystick-icon-color-active, #fff);
+
+$floating-pane-border-color:  var(--igc-floating-pane-border-color, $border-color);
