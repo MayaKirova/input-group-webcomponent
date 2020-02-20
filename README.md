@@ -1,20 +1,51 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Basic POC example of input-group created with Stencil, based on IgniteUI for Angular's existing input-group component.
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+1.	To install dependencies.
+
+From the root folder run:
+```
+npm install
+```
+
+2.	To start the basic sample.
+
+From the root folder run:
+
+```
+npm start
+```
+
+3. Usage
+
+You can template an input and label inside the input group:
+
+```
+<igc-input-group>
+    <label>Phone</label>
+    <input type="number" />
+</igc-input-group>
+```
+
+Those are then used in the input group.
+
+You can also define a prefix and suffix in a slot tag with the related name:
+
+```
+<igc-input-group>
+    <span slot="prefix">+359</span>
+    <label>Phone</label>
+    <input type="number" />
+    <span slot="suffix" class="material-icons icon">phone</span>
+    </igc-input-group>
+```
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+
+```
+npm run build
+```
+The output of the build is located under the `dist` folder.
 
 # Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)

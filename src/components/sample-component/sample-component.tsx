@@ -11,7 +11,7 @@ export class SampleComponent {
     <igc-input-group>
     <span slot="prefix">+359</span>
     <label>Phone</label>
-    <input name="fullName" type="number" />
+    <input type="number" />
     <span slot="suffix" class="material-icons icon">phone</span>
     </igc-input-group>
     </Host>);

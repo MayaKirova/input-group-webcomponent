@@ -1,4 +1,4 @@
-# my-component
+# igc-input-group
 
 
 
@@ -7,15 +7,15 @@
 
 ## Dependencies
 
-### Depends on
+### Used by
 
-- [igc-input-group](../input-group)
+ - [sample-component](../sample-component)
 
 ### Graph
 ```mermaid
 graph TD;
   sample-component --> igc-input-group
-  style sample-component fill:#f9f,stroke:#333,stroke-width:4px
+  style igc-input-group fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
