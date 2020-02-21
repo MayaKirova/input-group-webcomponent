@@ -21,10 +21,10 @@ npm start
 
 You can template an input and label inside the input group:
 
-```
+```html
 <igc-input-group>
-    <label>Phone</label>
-    <input type="number" />
+  <label>Phone</label>
+  <input type="number" />
 </igc-input-group>
 ```
 
@@ -32,13 +32,13 @@ Those are then used in the input group.
 
 You can also define a prefix and suffix in a slot tag with the related name:
 
-```
+```html
 <igc-input-group>
-    <span slot="prefix">+359</span>
-    <label>Phone</label>
-    <input type="number" />
-    <span slot="suffix" class="material-icons icon">phone</span>
-    </igc-input-group>
+  <span slot="prefix">+359</span>
+  <label>Phone</label>
+  <input type="number" />
+  <span slot="suffix" class="material-icons icon">phone</span>
+</igc-input-group>
 ```
 
 # Build and Test
